@@ -31,7 +31,7 @@ public class Music implements Serializable {
     public String getSinger(){
         return singer;
     }
-    public void setSinger(){
+    public void setSinger(String singer){
         this.singer=singer;
     }
 

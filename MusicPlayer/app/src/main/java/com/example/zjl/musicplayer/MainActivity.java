@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void initData(){
         mHelper=new MyOpenHelper(this,"music",null,1);
-        mDatanbase=mHelper.getWritableDatabase();
+        mDatabase=mHelper.getWritableDatabase();
         Constants.playlist=MusicUtils.getDataFromDB(mDatabase);
     }
     private class MyTabChangeListener implements TabHost.OnTabChangeListener{
